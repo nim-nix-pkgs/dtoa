@@ -11,6 +11,7 @@
   inputs.src-dtoa-master.ref   = "refs/heads/master";
   inputs.src-dtoa-master.owner = "LemonBoy";
   inputs.src-dtoa-master.repo  = "dtoa.nim";
+  inputs.src-dtoa-master.dir   = "";
   inputs.src-dtoa-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
