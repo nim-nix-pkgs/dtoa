@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."dtoa-master".dir   = "master";
-  inputs."dtoa-master".owner = "nim-nix-pkgs";
-  inputs."dtoa-master".ref   = "master";
-  inputs."dtoa-master".repo  = "dtoa";
-  inputs."dtoa-master".type  = "github";
-  inputs."dtoa-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."dtoa-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
